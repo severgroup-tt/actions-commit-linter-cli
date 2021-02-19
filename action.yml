@@ -1,0 +1,7 @@
+name: 'commitlint'
+author: 'severgroup-tt'
+description: 'Lint commit messages'
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/severgroup-tt/actions-commitlint:latest'

@@ -1,0 +1,27 @@
+name: Action Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: .bin/build_docker_image.sh
+
+#  push-image:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#      - run: .bin/push_docker_image.sh
+
+
+#    steps:
+#      - name: Hello world action
+#        with: # Set the secret as an input
+#          super_secret: ${{ secrets.SuperSecret }}
+#        env: # Or as an environment variable
+#          super_secret: ${{ secrets.SuperSecret }}
