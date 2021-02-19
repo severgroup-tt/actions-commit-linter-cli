@@ -1,17 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-USERNAME=""
-CR_PAT=""
-
-REGISTRY="ghcr.io"
-OWNER="severgroup-tt"
-
-IMAGE_NAME="actions-commitlint"
-IMAGE_TAG="v1.0.0-beta.0"
-
-printf "${CR_PAT}" | docker login "${REGISTRY}" \
-  --username "${USERNAME}" \
-  --password-stdin
+set -eou pipefail
 
 docker tag "${IMAGE_NAME}:${IMAGE_TAG}" "${REGISTRY}/${OWNER}/${IMAGE_NAME}:${IMAGE_TAG}"
 docker tag "${IMAGE_NAME}:${IMAGE_TAG}" "${REGISTRY}/${OWNER}/${IMAGE_NAME}:latest"
