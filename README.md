@@ -12,7 +12,7 @@ See [action.yml](action.yml)
 
 ## Example
 
-```
+```yaml
 name: Commitlint
 
 on: [push]
