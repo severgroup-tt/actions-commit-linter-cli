@@ -1,7 +1,11 @@
-name: 'commitlint'
+name: 'commit-linter-cli'
 author: 'severgroup-tt'
 description: 'Lint commit messages'
 
+branding:
+  icon: 'git-commit'
+  color: 'green'
+
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/severgroup-tt/actions-commitlint:latest'
+  image: 'docker://ghcr.io/severgroup-tt/actions-commit-linter-cli:latest'

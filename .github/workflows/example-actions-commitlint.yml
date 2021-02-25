@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: severgroup-tt/actions-commitlint@v1.0.0-beta.3
+      - uses: severgroup-tt/actions-commit-linter-cli@latest
