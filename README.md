@@ -22,5 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: severgroup-tt/actions-commit-linter-cli@latest
+      - uses: severgroup-tt/actions-commit-linter-cli@v1.0.0
 ```
